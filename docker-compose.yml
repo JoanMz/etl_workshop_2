@@ -1,8 +1,13 @@
 services:
+
         postgresdb:
                 image: postgres:16.2-alpine3.19
-
-                environment: 
-                        POSTGRES_PASSWORD: password
+                volumes:
+                        - postgres-db-volume:/var/lib/postgresql/data
+                env_file:
+                        - ./docker-secrets
+                
                 ports:
                         - 54321:5432
+volumes:
+        postgres-db-volume:

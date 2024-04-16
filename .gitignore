@@ -1,3 +1,4 @@
 .env
 venv
-DB_Connection/__pycache__.py
+DB_Connection/__pycache__
+docker-secrets
