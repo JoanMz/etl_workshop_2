@@ -4,3 +4,4 @@ airflow.db
 standalone_admin_password.txt
 webserver_config.py
 logs
+__pycache__
