@@ -2,3 +2,4 @@
 venv
 DB_Connection/__pycache__
 docker-secrets
+google_cred.json

@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./DB_Connection",
+        "./Drive"
+    ],
+    "remote.autoForwardPortsFallback": 0
+}
