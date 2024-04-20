@@ -8,7 +8,7 @@ logger = logging.getLogger("[Spotify:logs]")
 def Extract()->pd.DataFrame:
     try:
         logger.log(level=20, msg=f"[{datetime.now()}] - start Extract")
-        df = pd.read_csv("../Data/spotify_dataset.csv")
+        df = pd.read_csv("/home/joan/Desktop/etl_workshop_2/Data/spotify_dataset.csv")
         logger.log(level=20, msg=f"[{datetime.now()}] - data extracted")
         return df
     except Exception as err:
