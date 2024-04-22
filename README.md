@@ -95,3 +95,10 @@ sudo docker-compose up
 sudo docker exec -it etl_workshop_2-postgresdb-1 /bin/bash
 psql -U postgres
 ```
+```
+Create Database workshop_2;
+```
+3. Start Airflow
+   ```
+   airflow standalone
+   ```
