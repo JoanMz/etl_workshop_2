@@ -48,7 +48,10 @@ Follow these steps to set up the project:
      ```
      python3 -m venv venv
      ```
-
+5. **Instal python requirements**:
+   ```
+   pip install -r requirements.txt
+   ```
 #### Project Structure
 
 The project directory structure is as follows:
