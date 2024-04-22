@@ -1,8 +1,9 @@
+from decouple import config
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 import sys
-sys.path.append("/home/joan/Desktop/etl_workshop_2/Dags")
+sys.path.append(f"{config('Rpath')}/Dags")
 from Spotify import Extract as ExtractSpotify, drop_fake_index_col, drop_duplicates
 from Grammys import Extract as ExtractGrammys, add_column_published_date, drop_columns, drop_nulls
 from Merge import merge_data
