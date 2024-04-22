@@ -48,6 +48,10 @@ Follow these steps to set up the project:
      ```
      python3 -m venv venv
      ```
+   - Use python env
+     ```bash
+     source venv/bin/activate
+     ```
 5. **Instal python requirements**:
    ```
    pip install -r requirements.txt
