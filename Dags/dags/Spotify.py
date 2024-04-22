@@ -24,7 +24,7 @@ def drop_fake_index_col(**kwargs)->json:
         json_df = json.loads(ti.xcom_pull(task_ids="extract_spotify_task"))
         df = pd.json_normalize(data=json_df)
         try:
-            df.drop(columns=("Unamed: 0"), inplace=True)
+            df.drop(columns=('Unnamed: 0'), inplace=True)
         except:
             logger.log(level=20, msg=f"[{datetime.now()}] - finish drop_fake_index")    
             return df.to_json(orient="records")
