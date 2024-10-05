@@ -1,6 +1,6 @@
 .env
 venv
-DB_Connection/__pycache__
+*__pycache__
 docker-secrets
 google_cred.json
-.vscode
+*.vscode

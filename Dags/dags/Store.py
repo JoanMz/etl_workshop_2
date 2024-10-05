@@ -16,3 +16,4 @@ def Store_data():
 
     except Exception as err:
         logger.error(f"[{datetime.now()}] - {err}")
+        sys.exit()

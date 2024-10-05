@@ -2,7 +2,7 @@ from pydrive2.auth import GoogleAuth
 from pydrive2.drive import GoogleDrive
 from decouple import config
 
-credentials_dir = "/home/joan/Desktop/etl_workshop_2/Drive/credentials_module.json"
+credentials_dir = f"{config('Rpath')}/Drive/credentials_module.json"
 id_f = config("Google_Folder")
 
 def login():
